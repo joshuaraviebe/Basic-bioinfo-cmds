@@ -3,3 +3,5 @@
 bgzip file.vcf 
 
 tabix -p vcf file.vcf.gz
+
+bcftools index /path/file.vcf.gz
