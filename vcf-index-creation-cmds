@@ -1,0 +1,5 @@
+# to create index for vcf file 
+
+bgzip file.vcf 
+
+tabix -p vcf file.vcf.gz
