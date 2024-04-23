@@ -1,0 +1,11 @@
+# to view sample name in bam file
+samtools view -H file.bam
+
+# to add or replace sample name 
+
+addorreplacereadgroups tool in GATK
+
+# to split the bam files based on chr 
+
+docker run broadinstitute/gatk:4.5.0.0 java -Xmx5G -jar gatk-package-4.5.0.0-local.jar SplitReads -I mapped.bam -L chr{1 .. 22 X Y M } -O /path/20 --tmp-dir /tmp 2>&1 | tee -a Splitreads.log
+
