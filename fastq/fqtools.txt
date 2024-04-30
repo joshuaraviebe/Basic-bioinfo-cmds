@@ -1,0 +1,11 @@
+docker pull oxfordmmm/fqtools:latest
+
+sudo docker run -v /home/joshua/:/home/joshua/ -it --rm oxfordmmm/fqtools:latest
+
+/fqtools/bin/fqtools -h 
+
+lengthtab Tabulate FASTQ read lengths
+view      View FASTQ files
+head      View the first reads in FASTQ files
+count     Count FASTQ file reads
+
